@@ -19,6 +19,9 @@ var urlencodedParser = bodyParser.urlencoded({ extended: false })
 
 const transactionRoutes = require('./app/routers/transaction.routes');
 
+app.get("/", (req, res)=>{
+    console.log('||||||||||||||||||||||||||')
+})
 app.disable('etag');
 
 // Allow CORS For Localhost

@@ -32,6 +32,7 @@ exports.createNewTransaction = async (req, res) => {
 
 // Get All Transactions
 exports.getAllTransactions = async (req, res) => {
+    console.log('||||||||||||||||')
     let status, message, data;
     try {
         const allTransaction = await TransactionModel.find();
